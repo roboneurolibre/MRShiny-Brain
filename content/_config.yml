@@ -5,7 +5,7 @@
 
 #######################################################################################
 # Book settings
-title                       : "NeuroLibre preprint template"  # The title of the book. Will be placed in the left navbar.
+title                       : "Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application"  # The title of the book. Will be placed in the left navbar.
 author                      : Robo Neuro  # The author of the book
 copyright                   : "2021"  # Copyright year to be placed in the footer
 logo                        : "neurolibre-logo.png"  # A path to the book logo
