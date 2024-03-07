@@ -39,7 +39,7 @@ launch_buttons:
   thebe                     : false  # Add a thebe button to pages (requires the repository to run on Binder)
 
 repository:
-  url                       : https://github.com/agahkarakuzu/template  # The URL to your book's repository
+  url                       : https://github.com/arcj-hub/MRShiny-Brain/  # The URL to your book's repository
   path_to_book              : "content"  # A path to your book's folder, relative to the repository root.
   branch                    : main  # Which branch of the repository should be used when creating links
 
