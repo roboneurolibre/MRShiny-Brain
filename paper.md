@@ -35,7 +35,6 @@ authors:
     orcid: 
     equal-contrib: true
     affiliation: * 1,2,9
-
 affiliations:
   - name: International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
     index: 1
