@@ -11,9 +11,15 @@ authors:
   - name: Alexander Mark Weber
     orcid: 
     affiliation: " 3 "
+ - name: Paulina Scheuren
+    orcid: 
+    affiliation: " 1, 9 "
+ - name: Oscar Ortiz
+    orcid: 
+    affiliation: " 1 "
 
 affiliations:
-  - name: NeuroPoly Lab, Institute of Biomedical Engineering, Polytechnique Montreal, Montreal, QC, Canada
+  - name: International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
     index: 1
   - name: Mila - Quebec AI Institute, Montreal, QC, Canada
     index: 2
