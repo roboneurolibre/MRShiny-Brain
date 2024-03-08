@@ -8,19 +8,24 @@ authors:
   - name: Jessica Archibald
     orcid: 0000-0001-6651-183X
     affiliation: "1, 2 "
-  - name: Sandrine Bédard
-    orcid: 0000-0001-9859-1133
+- name: Alexander Mark Weber
+    affiliation: " 3 "
+  - name: Paulina Scheuren
+    affiliation: " 1, 9 "
+  - name: Oscar Ortiz
+    affiliation: " 1 "
+ - name: Cassandra Choles
+    affiliation: " 1, 9 "
+ - name: Jaime Lee
+    affiliation: " 1, 9 "
+ - name: Niklaus Zölch
+    affiliation: " 5 "
+  - name: Erin L. MacMillan 
     equal-contrib: true
-    affiliation: "1"
-  - name: Miloš Keřkovský
-    orcid: 0000-0003-0587-9897
-    affiliation: "5"
-  - name: Tomáš Rohan
-    orcid: 0000-0002-7105-583X
-    affiliation: "5"
-  - name: Julien Cohen-Adad
-    orcid: 0000-0003-3662-9532
-    affiliation: "1, 2, 6, 7"
+    affiliation: " 6,8,7 "
+  - name: John L.K Kramer
+    equal-contrib: true
+    affiliation: 1,2,9
 affiliations:
   - name: NeuroPoly Lab, Institute of Biomedical Engineering, Polytechnique Montreal, Montreal, QC, Canada
     index: 1
