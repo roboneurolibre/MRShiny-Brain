@@ -8,24 +8,10 @@ authors:
   - name: Jessica Archibald
     orcid: 0000-0001-6651-183X
     affiliation: "1, 2 "
-- name: Alexander Mark Weber
+  - name: Alexander Mark Weber
+    orcid: 
     affiliation: " 3 "
-  - name: Paulina Scheuren
-    affiliation: " 1, 9 "
-  - name: Oscar Ortiz
-    affiliation: " 1 "
- - name: Cassandra Choles
-    affiliation: " 1, 9 "
- - name: Jaime Lee
-    affiliation: " 1, 9 "
- - name: Niklaus Zölch
-    affiliation: " 5 "
-  - name: Erin L. MacMillan 
-    equal-contrib: true
-    affiliation: " 6,8,7 "
-  - name: John L.K Kramer
-    equal-contrib: true
-    affiliation: 1,2,9
+
 affiliations:
   - name: NeuroPoly Lab, Institute of Biomedical Engineering, Polytechnique Montreal, Montreal, QC, Canada
     index: 1
