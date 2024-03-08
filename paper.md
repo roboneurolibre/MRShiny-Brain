@@ -11,9 +11,9 @@ authors:
   - name: Alexander Mark Weber
     orcid: 
     affiliation: " 3, 4 "
-  - name: Alexander Mark Weber
+  - name: Paulina Scheuren
     orcid: 
-    affiliation: " 3, 4 "
+    affiliation: " 1, 9 "
 
 affiliations:
   - name: International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
@@ -22,15 +22,19 @@ affiliations:
     index: 2
   - name: Department of Pediatrics, University of British Columbia, Vancouver, Canada.
     index: 3
-  - name: BC Children Hospital Research Institute, Vancouver, Canada
+  - name: BC Children Hospital Research Institute, Vancouver, Canada.
     index: 4
-  - name: Department of Radiology and Nuclear Medicine, University Hospital Brno and Masaryk University, Brno, Czechia
+  - name: Forensic Medicine, Universität Zürich, Zürich, Switzerland.
     index: 5
-  - name: Functional Neuroimaging Unit, CRIUGM, Université de Montréal, Montreal, QC, Canada
+  - name: Department of Radiology, University of British Columbia, Vancouver, Canada.
     index: 6
-  - name: Centre de recherche du CHU Sainte-Justine, Université de Montréal, Montreal, QC, Canada
+  - name: Image Tech Lab, Simon Fraser University, Surrey, Canada.
     index: 7
-date: 16 August 2023
+  - name: Philips Healthcare Canada, Markham, Canada.
+    index: 8
+  - name: Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Columbia, Vancouver, Canada.
+    index: 9
+date: 8 March 2023
 bibliography: paper.bib
 ---
 
