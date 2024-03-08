@@ -1,4 +1,4 @@
-___
+---
 
 title: Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application.
 subject: NRP 
@@ -63,7 +63,7 @@ date: 7 March 2024
 bibliography: paper.bib
 
 export:
-___
+---
 
 # Abstract
 
