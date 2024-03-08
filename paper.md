@@ -7,7 +7,6 @@ tags:
 authors:
   - name: Jessica Archibald
     orcid: 
-    #equal-contrib: true
     affiliation: "1, 2 "
   - name: Alexander Mark Weber
     orcid: 
