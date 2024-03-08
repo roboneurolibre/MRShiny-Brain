@@ -1,59 +1,44 @@
 ---
-title: 'Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application'
+title: 'A database of the healthy human spinal cord morphometry in the PAM50 template space'
 tags:
-  - Preprint
-  - Reproducible article
-  - Neuroscience
+  - spinal cord
+  - morphometric measures 
+  - normative values
+  - open-source
 authors:
-  - name: Jessica Archibald
-    orcid: 
-    affiliation: "1, 2 "
-  - name: Alexander Mark Weber
-    orcid: 
-    affiliation: " 3 "
-  - name: Paulina Scheuren
-    orcid: 
-    affiliation: " 1, 9 "
-  - name: Oscar Ortiz
-    orcid: 
-    affiliation: " 1 "
- - name: Cassandra Choles
-    orcid: 
-    affiliation: " 1, 9 "
- - name: Jaime Lee
-    orcid: 
-    affiliation: " 1, 9 "
- - name: Niklaus Zölch
-    orcid: 
-    affiliation: " 5 "
-  - name: Erin L. MacMillan
-    orcid: 
+  - name: Jan Valošek
+    orcid: 0000-0002-7398-4990
     equal-contrib: true
-    affiliation: " 6,8,7 "
-  - name: John L.K Kramer
-    orcid: 
+    affiliation: "1, 2, 3, 4"
+  - name: Sandrine Bédard
+    orcid: 0000-0001-9859-1133
     equal-contrib: true
-    affiliation: " 1,2,9 "
+    affiliation: "1"
+  - name: Miloš Keřkovský
+    orcid: 0000-0003-0587-9897
+    affiliation: "5"
+  - name: Tomáš Rohan
+    orcid: 0000-0002-7105-583X
+    affiliation: "5"
+  - name: Julien Cohen-Adad
+    orcid: 0000-0003-3662-9532
+    affiliation: "1, 2, 6, 7"
 affiliations:
-  - name: International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
+  - name: NeuroPoly Lab, Institute of Biomedical Engineering, Polytechnique Montreal, Montreal, QC, Canada
     index: 1
-  - name: Department of Experimental Medicine, University of British Columbia, Vancouver, Canada.
+  - name: Mila - Quebec AI Institute, Montreal, QC, Canada
     index: 2
-  - name: Department of Pediatrics, University of British Columbia, Vancouver, Canada.
+  - name: Department of Neurosurgery, Faculty of Medicine and Dentistry, Palacký University Olomouc, Olomouc, Czechia
     index: 3
-  - name: BC Children Hospital Research Institute, Vancouver, Canada. 
+  - name: Department of Neurology, Faculty of Medicine and Dentistry, Palacký University Olomouc, Olomouc, Czechia
     index: 4
-  - name: Forensic Medicine, Universität Zürich, Zürich, Switzerland.
+  - name: Department of Radiology and Nuclear Medicine, University Hospital Brno and Masaryk University, Brno, Czechia
     index: 5
-  - name: Department of Radiology, University of British Columbia, Vancouver, Canada.
+  - name: Functional Neuroimaging Unit, CRIUGM, Université de Montréal, Montreal, QC, Canada
     index: 6
-  - name: Image Tech Lab, Simon Fraser University, Surrey, Canada.
+  - name: Centre de recherche du CHU Sainte-Justine, Université de Montréal, Montreal, QC, Canada
     index: 7
-  - name: Philips Healthcare Canada, Markham, Canada.
-    index: 8
-  - name: Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Columbia, Vancouver, Canada.
-    index: 9
-date: 7 March 2024
+date: 16 August 2023
 bibliography: paper.bib
 ---
 
