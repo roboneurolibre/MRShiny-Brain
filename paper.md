@@ -1,15 +1,13 @@
 ---
-title: 'A database of the healthy human spinal cord morphometry in the PAM50 template space'
+title: 'Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application'
 tags:
-  - spinal cord
-  - morphometric measures 
-  - normative values
-  - open-source
+  - Preprint
+  - Reproducible article
+  - Neuroscience
 authors:
-  - name: Jan Valošek
-    orcid: 0000-0002-7398-4990
-    equal-contrib: true
-    affiliation: "1, 2, 3, 4"
+  - name: Jessica Archibald
+    orcid: 0000-0001-6651-183X
+    affiliation: "1, 2 "
   - name: Sandrine Bédard
     orcid: 0000-0001-9859-1133
     equal-contrib: true
