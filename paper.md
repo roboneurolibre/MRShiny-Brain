@@ -1,5 +1,4 @@
 ---
-
 title: Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application.
 subject: NRP 
 subtitle: 
@@ -58,11 +57,8 @@ affiliations:
     index: 8
   - name: Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Columbia, Vancouver, Canada.
     index: 9
-    
 date: 7 March 2024
 bibliography: paper.bib
-
-export:
 ---
 
 # Abstract
