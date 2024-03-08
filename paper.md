@@ -10,16 +10,19 @@ authors:
     affiliation: "1, 2 "
   - name: Alexander Mark Weber
     orcid: 
-    affiliation: " 3 "
+    affiliation: " 3, 4 "
+ - name: Alexander Mark Weber
+    orcid: 
+    affiliation: " 3, 4 "
 
 affiliations:
   - name: International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
     index: 1
-  - name: Mila - Quebec AI Institute, Montreal, QC, Canada
+  - name: Department of Experimental Medicine, University of British Columbia, Vancouver, Canada.
     index: 2
-  - name: Department of Neurosurgery, Faculty of Medicine and Dentistry, Palacký University Olomouc, Olomouc, Czechia
+  - name: Department of Pediatrics, University of British Columbia, Vancouver, Canada.
     index: 3
-  - name: Department of Neurology, Faculty of Medicine and Dentistry, Palacký University Olomouc, Olomouc, Czechia
+  - name: BC Children Hospital Research Institute, Vancouver, Canada
     index: 4
   - name: Department of Radiology and Nuclear Medicine, University Hospital Brno and Masaryk University, Brno, Czechia
     index: 5
