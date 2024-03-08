@@ -1,5 +1,5 @@
 ---
-title: Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application.
+title: 'Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application'
 subject: NRP 
 subtitle: 
 tags:
