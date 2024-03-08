@@ -11,12 +11,6 @@ authors:
   - name: Alexander Mark Weber
     orcid: 
     affiliation: " 3 "
- - name: Paulina Scheuren
-    orcid: 
-    affiliation: " 1, 9 "
- - name: Oscar Ortiz
-    orcid: 
-    affiliation: " 1 "
 
 affiliations:
   - name: International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
