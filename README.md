@@ -1,29 +1,7 @@
-## Preprint template
+# MRShiny Brain 
 
-Template repository for NeuroLibre reproducibe preprint submissions.
+The use of human brain data, encompassing structural, functional, and biochemical information, has grown in addressing inquiries related to neurodegenerative and neuropsychiatric conditions. However, the normal variability within these measures has not been systematically reported. In this work, a database comprising these outcome measures in a healthy population (n=51) is presented to potentially serve as a comparative reference with normative values. Standardized procedures ensured consistent collection of magnetic resonance imaging (MRI) and spectroscopy data, acquired using a 3T scanner with various sequences. Established and custom software tools were employed to analyze outcome measures, providing an overview of the methodology and data acquisition process for potential future utilization.
 
-### Step 1: Click `Use this template button` and name your new repository
+The online interactive database allows users to filter data based on sex, age, and different brain locations. Additionally, it provides the capability to explore correlations between different outcome measures interactively.
 
-### Step 2: Do the following changes in [_config.yml](content/_config.yml)
-
-```yaml
-title                       : "NeuroLibre preprint template"  # Add your title
-author                      : John Doe, Jane Doe  # Add author names
-```
-```yaml
-repository:
-  url: https://github.com/neurolibre/template  # The URL to your new repository
-```
-> At this stage, you are ready to use [RoboNeuro preview service](https://roboneuro.herokuapp.com/) to get your first book build.
----
-### Step 3: Add your executable content under the `content` directory
-
-* ✅ You can add a mixture of `Jupyter Notebooks`, `MyST` formatted markdown and plain text markdown files.
-* ✅ You can organize your content in subfolders.
-* ❌ We don't accept (non-executable) plain text markdown files alone.
-
-### Step 4: Edit [_toc.yml](content/_toc.yml) according to your new content 
-
-### Step 5: Define your execution environment under the `binder` directory
-
-You can use any [BinderHub configuration files](https://mybinder.readthedocs.io/en/latest/using/config_files.html) that you need.
+![Feb-04-2024 16-07-51](https://github.com/arcj-hub/MRShinyBrain/assets/82059281/cb63f566-f275-436b-8dd8-e536ae1105e4)
