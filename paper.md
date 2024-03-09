@@ -1,4 +1,3 @@
-
 ---
 title: 'Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application'
 tags:
@@ -56,7 +55,7 @@ affiliations:
     index: 9
 date: 8 March 2023
 bibliography: paper.bib
-___
+---
 
 # Abstract
 
