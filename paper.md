@@ -123,7 +123,7 @@ _Biochemical_
 3     |     RESULTS
 -------------------
 
-The quality metrics of the spectra can be seen in the application directly, while Figure 3 illustrates the pre-processed and baseline corrected spectra. 
+The quality metrics of the spectra can be seen in the application directly, while Figure 2 illustrates the pre-processed and baseline corrected spectra. 
 
 **Missing data:** MRS and CBF data (1 M) were unable to be included since the individual transients, and pCASL data were not properly saved, but CT data was viable. For three participants we excluded metabolites from one location (i.e., pACC (n=1), aMCC (n=1), and PCC (n=1)), due to linewidth of the water being >10Hz. The MRS data quality from the remaining participants are illustrated in app. The mean ± std.dev of the quality evaluation index (QEI)25 for ASL CBF maps for the 50 subjects is  0.794 ± 0.032.
 
@@ -132,86 +132,21 @@ The quality metrics of the spectra can be seen in the application directly, whil
 In summary, this work provides a database containing structural, functional, and biochemical data from the brains of 51 healthy individuals. This resource serves as a valuable reference for researchers exploring neurodegenerative and neuropsychiatric conditions. The interplay of structural, functional, and biochemical measures within a healthy population may provide an understanding of normal variability, laying the groundwork for more nuanced investigations into neurological conditions.
 
 
-## References
-
-
-# Mathematics
-
-Single dollars ($) are required for inline mathematics e.g. $f(x) = e^{\pi/x}$
-
-Double dollars make self-standing equations:
-
-$$\Theta(x) = \left\{\begin{array}{l}
-0\textrm{ if } x < 0\cr
-1\textrm{ else}
-\end{array}\right.$$
-
-You can also use plain \LaTeX for equations
-\begin{equation}\label{eq:fourier}
-\hat f(\omega) = \int_{-\infty}^{\infty} f(x) e^{i\omega x} dx
-\end{equation}
-and refer to \autoref{eq:fourier} from text.
-
-# Citations
-
-Citations to entries in `preprint.bib` should be in
-[rMarkdown](http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html)
-format.
-
-For a quick reference, the following citation commands can be used:
-* `@author:2021`  ->  "Author et al. (2021)"
-* `[@author:2021]` -> "(Author et al., 2021)"
-* `[@author1:2021; @author2:2001]` -> "(Author1 et al., 2021; Author2 et al., 2021)"
-
-This is an example citation [@neurolibre:2021].
-
-
-
 
 # Figures
 
-Figures can be included like this:
+![Study design. MR scans included an anatomical 3DT1, a pseudo-continuous arterial spin labelling (pCASL) sequence, and an MR Spectroscopy (MRS) sequence sLASER. MRS data were collected at 4 different voxel locations (periungual anterior cingulate cortex [pACC], anterior mid-cingulate cortex [aMCC], posterior mid-cingulate cortex [pMCC], and the posterior cingulate cortex [PCC]) The order of the MRS acquisition from each voxel was randomized for each participant. Figure modified with text, markings, and colour after adaptation of “Nervous System & Medical Equipment” from Servier Medical Art by Servier, licensed under a Creative Commons Attribution 3.0 Unported License.\label{fig:figure1}](content/images/fig1.png){ width=50% }
 
-![Caption for example figure.\label{fig:example}](images/example_figure.png)
-
-You can reference figure from text using \autoref{fig:example}.
-
-Figure sizes can be customized by adding an optional second parameter:
-
-![Caption for example figure.](images/example_figure.png){ width=20% }
-
-# Acknowledgements
-
-NeuroLibre is sponsored by Canadian Open Neuroscience Platform (CONP), Brain Canada, Quebec Bioimaging Network, Cancer Computing and Healthy Brains & Healthy Life. 
+![MRS Spectra at each brain location. MRS data were collected at 4 different voxel locations (periungual anterior cingulate cortex [pACC], anterior mid-cingulate cortex [aMCC], posterior mid-cingulate cortex [pMCC], and the posterior cingulate cortex [PCC]).\label{fig:figure2}](content/images/fig2.png){ width=50% }
 
 
 
-## Features of MyST
+## References
 
-MyST is focused on scientific writing, and ensuring that citations are first class both for writing and for reading (see Figure 1).
 
-![](./images/citations.png)
-**Figure 1**: Citations are rendered with a popup directly inline.
 
-MyST aims to show as much information in context as possible, for example, Figure 2 shows a reading experience for a referenced equation: you can immediately **click on the reference**, see the equation, all without loosing any context -- ultimately saving you time. Head _et al._ (2021) found that these ideas both improved the overall reading experience of articles as well as allowed researchers to answer questions about an article **26% faster** when compared to a traditional PDF!
 
-![](./images/equations.gif)
-**Figure 2**: In context cross-references improve the reading experience.
 
-One of the important underlying goals of practicing reproducibility, sharing more of the methods and data behind a scientific work so that other researchers can both verify as well as build upon your findings. One of the exciting ways to pull for reproducibility is to make documents directly linked to data and computation! In Figure 3, we are showing outputs from a Jupyter Notebook directly part of the published scientific narrative.
-
-![](./images/interactive.gif)
-**Figure 3**: Embedding data, interactivity and computation into a MyST article.
-
-To drive all of these features, the contents of a MyST document needs to be well defined. This is critical for powering interactive hovers, linked citations, and compatibility with scientific publishing standards like the Journal Article Metadata Tag Suite (JATS). We have an emerging specification for MyST, [`myst-spec`](https://spec.myst.tools), that aims to capture this information and transform it between many different formats, like PDF, Word, JSON, and JATS XML (Figure 4). This specification is arrived at through a community-centric MyST Enhancement Proposal ([MEP](https://compass.executablebooks.org/en/latest/meps.html)) process.
-
-![](./images/structured-data.gif)
-**Figure 4**: The data behind MyST is **structured**, which means we can transform it into many different document types and use it to power all sorts of exciting features!
-
-One of the common forms of scientific communication today is through PDF documents. MyST has excellent support for creating PDF documents, using a data-driven templating library called `jtex`. The document in Figure 5 was created using MyST!
-
-![](./images/pdf-two-column.png)
-**Figure 5**: A PDF rendering through MyST.
 
 
 
