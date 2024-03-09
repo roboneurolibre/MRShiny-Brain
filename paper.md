@@ -56,7 +56,6 @@ affiliations:
     index: 9
 date: 8 March 2023
 bibliography: paper.bib
-<<<<<<< HEAD
 ___
 
 # Abstract
