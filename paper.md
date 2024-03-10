@@ -61,6 +61,8 @@ bibliography: paper.bib
 
 The utilization of structural, functional, and biochemical data from the human brain has grown in addressing inquiries related to neurodegenerative and neuropsychiatric conditions. However, the normal variability within these measures has not been systematically reported. In this work, a database comprising these outcome measures in a healthy population (n=51) was established to potentially serve as a comparative reference. Healthy individuals underwent standardized procedures to ensure consistent collection of magnetic resonance imaging (MRI) and spectroscopy data. The MRI data was acquired using a 3T scanner with various sequences, including MPRAGE 3D T1w, pseudo-continuous arterial spin labelling (pCASL), and single voxel proton magnetic resonance spectroscopy (1H-MRS). Established and custom software tools were employed to analyze outcome measures such as tissue segmentation, cortical thickness, cerebral blood flow, and metabolite levels measured by MRS. This study provides a comprehensive overview of the data analysis process, aiming to facilitate future utilization of the collected data.
 
+To access the data interactively, please visit the following link: [https://mrshiny-brain.shinyapps.io/MRshinybrain/]. 
+
 
 1     |     INTRODUCTION
 ========================
