@@ -1,60 +1,65 @@
 ---
-title: 'Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application'
+title: "Integrating Structural, Functional, and Biochemical Brain Imaging Data with
+  MRShiny Brain - An Interactive Web Application"
 tags:
-  - Preprint
-  - Reproducible article
-  - Neuroscience
+- Preprint
+- Reproducible article
+- Neuroscience
+date: "8 March 2023"
+output: pdf_document
 authors:
-  - name: Jessica Archibald
-    orcid: 0000-0001-6651-183X
-    affiliation: "1, 2 "
-  - name: Alexander Mark Weber
-    orcid: 
-    affiliation: " 3, 4 "
-  - name: Paulina Scheuren
-    orcid: 
-    affiliation: " 1, 9 "
-  - name: Oscar Ortiz
-    orcid: 
-    affiliation: " 1 "
-  - name: Cassandra Choles
-    orcid: 
-    affiliation: " 1, 9 "
-  - name: Jaime Lee
-    orcid: 
-    affiliation: " 1, 9 "
-  - name: Niklaus Zölch
-    orcid: 
-    affiliation: " 5 "
-  - name: Erin L. MacMillan
-    orcid: 
-    equal-contrib: true
-    affiliation: " 6,8,7 "
-  - name: John L.K Kramer
-    orcid: 
-    equal-contrib: true
-    affiliation: 1,2,9
-affiliations:
-  - name: International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
-    index: 1
-  - name: Department of Experimental Medicine, University of British Columbia, Vancouver, Canada.
-    index: 2
-  - name: Department of Pediatrics, University of British Columbia, Vancouver, Canada.
-    index: 3
-  - name: BC Children Hospital Research Institute, Vancouver, Canada.
-    index: 4
-  - name: Forensic Medicine, Universität Zürich, Zürich, Switzerland.
-    index: 5
-  - name: Department of Radiology, University of British Columbia, Vancouver, Canada.
-    index: 6
-  - name: Image Tech Lab, Simon Fraser University, Surrey, Canada.
-    index: 7
-  - name: Philips Healthcare Canada, Markham, Canada.
-    index: 8
-  - name: Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Columbia, Vancouver, Canada.
-    index: 9
-date: 8 March 2023
+- name: Jessica Archibald
+  orcid: "0000-0001-6651-183X"
+  affiliation: '1, 2 '
+- name: Alexander Mark Weber
+  orcid: null
+  affiliation: ' 3, 4 '
+- name: Paulina Scheuren
+  orcid: null
+  affiliation: ' 1, 9 '
+- name: Oscar Ortiz
+  orcid: null
+  affiliation: ' 1 '
+- name: Cassandra Choles
+  orcid: null
+  affiliation: ' 1, 9 '
+- name: Jaime Lee
+  orcid: null
+  affiliation: ' 1, 9 '
+- name: Niklaus Zölch
+  orcid: null
+  affiliation: ' 5 '
+- name: Erin L. MacMillan
+  orcid: null
+  equal-contrib: yes
+  affiliation: ' 6,8,7 '
+- name: John L.K Kramer
+  orcid: null
+  equal-contrib: yes
+  affiliation: null
 bibliography: paper.bib
+affiliations:
+- name: International Collaboration on Repair Discoveries (ICORD), University of British
+    Columbia, Vancouver, Canada.
+  index: 1
+- name: Department of Experimental Medicine, University of British Columbia, Vancouver,
+    Canada.
+  index: 2
+- name: Department of Pediatrics, University of British Columbia, Vancouver, Canada.
+  index: 3
+- name: BC Children Hospital Research Institute, Vancouver, Canada.
+  index: 4
+- name: Forensic Medicine, Universität Zürich, Zürich, Switzerland.
+  index: 5
+- name: Department of Radiology, University of British Columbia, Vancouver, Canada.
+  index: 6
+- name: Image Tech Lab, Simon Fraser University, Surrey, Canada.
+  index: 7
+- name: Philips Healthcare Canada, Markham, Canada.
+  index: 8
+- name: Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine,
+    University of British Columbia, Vancouver, Canada.
+  index: 9
 ---
 
 # Abstract
@@ -92,20 +97,27 @@ MRI data were collected using a 3T Philips Ingenia Elition X with a 32-channel S
 2.3     |     MR Analysis
 --------------------------------------
 
-**Structural Measures:** Image Segmentation was performed in FSL (v 6.05) using default options, ROI segmentation was performed using in-house MATLAB scripts. ROI Cortical Thickness was performed in native space for each subject using Freesurfer (v 7.2.0) [Code Availability ](https://github.com/arcj-hub/Freesurfer-CT-native-space).
+**Structural Measures:** Image Segmentation was performed in FSL (v 6.05) using default options, ROI segmentation was performed using in-house MATLAB scripts. ROI Cortical Thickness was performed in native space for each subject using Freesurfer (v 7.2.0) [Code Availability ](https://github.com/arcj-hub/Freesurfer-CT-native-space).  
+
 **Arterial Spin-Labeled MRI Preprocessing and Cerebral Blood Flow Computation:**
-Arterial spin-labeled MRI images were preprocessed using ASLPrep 0.6.0rc[debimpe2022aslprep;salo2023aslprep], which is based on fMRIPrep[@esteban2019fmriprep;@esteban2020analysis] and Nipype 1.8.6s.
+Arterial spin-labeled MRI images were preprocessed using ASLPrep 0.6.0rc[@debimpe2022aslprep;@salo2023aslprep], which is based on fMRIPrep[@esteban2019fmriprep;@esteban2020analysis] and Nipype 1.8.6s.  
+
 _Anatomical data preprocessing_
- A total of 50 T1-weighted (T1w) images were found within the input BIDS dataset. The T1-weighted (T1w) image was corrected for intensity non-uniformity (INU) with `N4BiasFieldCorrection`[@avants2014ants], distributed with ANTs 2.3.3[@avants2008symmetric;hang2001segmentation], and used as T1w-reference throughout the workflow. The T1w-reference was then skull-stripped with a Nipype implementation of the `antsBrainExtraction.sh` workflow (from ANTs), using OASIS30ANTs as target template. Brain tissue segmentation of cerebrospinal fluid (CSF), white-matter (WM) and gray-matter (GM) was performed on the brain extracted T1w using `fast` [FSL 6.0.7.1][@jenkinson2002improved].
+ A total of 50 T1-weighted (T1w) images were found within the input BIDS dataset. The T1-weighted (T1w) image was corrected for intensity non-uniformity (INU) with `N4BiasFieldCorrection`[@avants2014ants], distributed with ANTs 2.3.3[@avants2008symmetric;hang2001segmentation], and used as T1w-reference throughout the workflow. The T1w-reference was then skull-stripped with a Nipype implementation of the `antsBrainExtraction.sh` workflow (from ANTs), using OASIS30ANTs as target template. Brain tissue segmentation of cerebrospinal fluid (CSF), white-matter (WM) and gray-matter (GM) was performed on the brain extracted T1w using `fast` [FSL 6.0.7.1][@jenkinson2002improved].  
+ 
 _ASL data preprocessing_
 For the 1 ASL run found per subject, the following preprocessing was performed.
-First, the middle volume of the ASL timeseries was selected as the reference volume and brain extracted using Nipype's custom brain extraction workflow. First, the middle M0 volume of the ASL timeseries was selected as the reference volume and brain extracted using Nipype’s custom brain extraction workflow. Susceptibility distortion correction (SDC) was omitted. Head-motion parameters were estimated for the ASL data using FSL's `mcflirt`[@wang2008empirical]. Motion correction was performed separately for each of the volume types in order to account for intensity differences between different contrasts, which, when motion corrected together, can conflate intensity differences with head motions[@jenkinson2001global]. Next, ASLPrep concatenated the motion parameters across volume types and re-calculated relative root mean-squared deviation. ASLPrep co-registered the ASL reference to the T1w reference using FSL’s `flirt`[@greve2009accurate], which implemented the boundary-based registration cost-function[@power2014methods]. Co-registration used 6 degrees of freedom. The quality of co-registration and normalization to template was quantified using the Dice and Jaccard indices, the cross-correlation with the reference image, and the overlap between the ASL and reference images (e.g., image coverage). Several confounding timeseries were calculated, including both framewise displacement (FD) and DVARS. FD and DVARS are calculated using the implementations in Nipype (following the definition by[@buxton1998general]) for each ASL run.  ASLPrep summarizes in-scanner motion as the mean framewise displacement and relative root-mean square displacement.
+First, the middle volume of the ASL timeseries was selected as the reference volume and brain extracted using Nipype's custom brain extraction workflow. First, the middle M0 volume of the ASL timeseries was selected as the reference volume and brain extracted using Nipype’s custom brain extraction workflow. Susceptibility distortion correction (SDC) was omitted. Head-motion parameters were estimated for the ASL data using FSL's `mcflirt`[@wang2008empirical]. Motion correction was performed separately for each of the volume types in order to account for intensity differences between different contrasts, which, when motion corrected together, can conflate intensity differences with head motions[@jenkinson2001global]. Next, ASLPrep concatenated the motion parameters across volume types and re-calculated relative root mean-squared deviation. ASLPrep co-registered the ASL reference to the T1w reference using FSL’s `flirt`[@greve2009accurate], which implemented the boundary-based registration cost-function[@power2014methods]. Co-registration used 6 degrees of freedom. The quality of co-registration and normalization to template was quantified using the Dice and Jaccard indices, the cross-correlation with the reference image, and the overlap between the ASL and reference images (e.g., image coverage). Several confounding timeseries were calculated, including both framewise displacement (FD) and DVARS. FD and DVARS are calculated using the implementations in Nipype (following the definition by[@buxton1998general]) for each ASL run.  ASLPrep summarizes in-scanner motion as the mean framewise displacement and relative root-mean square displacement.  
+
 _Cerebral blood flow computation and denoising_
-ASLPrep calculated cerebral blood flow (CBF) from the single-delayPCASL using a single-compartment general kinetic model[@abraham2014machine]. Calibration (M0) volumes associated with the ASL scan were smoothed with a Gaussian kernel (FWHM=5 mm) and the average calibration image was calculated and scaled by 1. First, the middle volume of the ASL timeseries was selected as the reference volume and brain extracted using Nipype's custom brain extraction workflow.
+ASLPrep calculated cerebral blood flow (CBF) from the single-delayPCASL using a single-compartment general kinetic model[@abraham2014machine]. Calibration (M0) volumes associated with the ASL scan were smoothed with a Gaussian kernel (FWHM=5 mm) and the average calibration image was calculated and scaled by 1. First, the middle volume of the ASL timeseries was selected as the reference volume and brain extracted using Nipype's custom brain extraction workflow.  
+
 _ROI CBF estimates_
-ROI perfusion levels were extracted in native space using each ROI’s mask. Firstly the images were co-registered using ‘flirt’[@greve2009accurate], the resampled mask was then binarized, and ROI CBF was calculated using fslstats `cbf_extraction.sh` [Code Availability ](https://github.com/arcj-hub/ASLprep-CBF-Analysis).
+ROI perfusion levels were extracted in native space using each ROI’s mask. Firstly the images were co-registered using ‘flirt’[@greve2009accurate], the resampled mask was then binarized, and ROI CBF was calculated using fslstats `cbf_extraction.sh` [Code Availability ](https://github.com/arcj-hub/ASLprep-CBF-Analysis).  
+
 _Quality Evaluation Index (QEI)_
-The QEI was computed for each CBF map [@dolui2017structural]. QEI is based on the similarity between the CBF and the structural images, the spatial variability of the CBF image, and the percentage of grey matter voxels containing negative CBF values ‘Quality_aslprep.sh`  [Code Availability ](https://github.com/arcj-hub/ASLprep-CBF-Analysis). For more details of the pipeline, see [ASLPrep-Documentation].
+The QEI was computed for each CBF map [@dolui2017structural]. QEI is based on the similarity between the CBF and the structural images, the spatial variability of the CBF image, and the percentage of grey matter voxels containing negative CBF values ‘Quality_aslprep.sh`  [Code Availability ](https://github.com/arcj-hub/ASLprep-CBF-Analysis). For more details of the pipeline, see [ASLPrep-Documentation].  
+
 **MR Spectroscopy:** MRS analysis was performed following the recent expert guideline recommendations22–24. MRS data was pre-processed (e.g., frequency alignment, and eddy-current correction) and quantified using in-house MATLAB scripts. Spectral fitting was performed in LCModel (6.3). The basis set was simulated using he FID-A run-simLaserShapted_fast.m[@simpson2017advanced] function- (Link code-). The simulation included the following metabolites: PE, Asc, Scyllo, Glu, Gln, Cre, NAA, NAAG, PCr, GSH, Gly, Glc, GPC, Ala, Asp, GABA, Ins, Lac, and Tau. The LCModel fit was performed in the range of 0.5 to 4.0 ppm.
 
 2.4     |     Dashboard
@@ -133,6 +145,9 @@ The quality metrics of the spectra can be seen in the application directly, whil
 ----------------------
 In summary, this work provides a database containing structural, functional, and biochemical data from the brains of 51 healthy individuals. This resource serves as a valuable reference for researchers exploring neurodegenerative and neuropsychiatric conditions. The interplay of structural, functional, and biochemical measures within a healthy population may provide an understanding of normal variability, laying the groundwork for more nuanced investigations into neurological conditions.
 
+5     |     ACKNOWLEDGEMENTS
+----------------------
+The UBC MRI technologists are sincerely thanked for their valuable assistance and support throughout the study. The following funding sources are also acknowledged: J. Archibald's research scholarship from the National Council of Science and Technology (CONACYT), GSD-NSERC, and the Friedman Foundation. E.L. MacMillan's salary support from Philips Canada; and J. Kramer's funding from an NSERC Discovery Grant.
 
 
 # Figures
