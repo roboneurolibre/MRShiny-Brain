@@ -1,0 +1,13 @@
+name: MRShiny-Brain
+title: MRShiny-Brain
+username:
+account: mrshiny-brain
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 11670194
+bundleId: 8455550
+url: https://mrshiny-brain.shinyapps.io/MRShiny-Brain/
+when: 1712256657.86351
+lastSyncTime: 1712256657.86353
+asMultiple: FALSE
+asStatic: FALSE

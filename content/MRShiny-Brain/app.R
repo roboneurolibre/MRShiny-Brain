@@ -85,8 +85,7 @@ ui <- fluidPage(
                         HTML("<b><span style='font-size: 20px;'>How to cite this work</span></b>"),
                         HTML("<br>If you find this work helpful or utilize any part of it in your research or publications, please consider citing it as follows:"), br(),
                         HTML("<br><b> J. Archibald, et.al. Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application. [Journal]. [Year of Publication]. [URL or DOI]</b>."),br(),
-                        HTML("<br>We greatly appreciate the acknowledgment of our work.
-                      "),
+                      
                         style = "font-size: 11pt;"
                ),  
                
@@ -127,7 +126,7 @@ ui <- fluidPage(
                                        tags$p(
                                            HTML("<u>MRS Thermometry</u>"),
                                            p("ADD Description and codee to git",
-                                             tags$a(href = "https://github.com/arcj-hub/ASLprep-CBF-Analysis", "Code availability.")
+                                             tags$a(href = "-", "Code availability.")
                                            )),
                                    )
                             ),
@@ -257,22 +256,22 @@ ui <- fluidPage(
                             HTML("<h3>Input parameters</h3>"),
                             width = 3,
                             
-                            selectInput("sex_sm","Sex:", 
+                            selectInput("sex_tm","Sex:", 
                                         choices = c("male", "female", "All"),
                                         multiple= FALSE,
                                         selected = "All"
                             ),
-                            selectInput("area_sm", "Brain area:", unique(ATLAS$area),
+                            selectInput("area_tm", "Brain area:", unique(ATLAS$area),
                                         selected = unique(ATLAS$area)[1],
                                         selectize = TRUE, multiple = TRUE
                             ),
                             
-                            selectInput("outcome", label="Outcome Measure:", 
-                                        choices = list("Temperature" = "Temperature")
+                            selectInput("outcome_tm", label="Outcome Measure:", 
+                                        choices = list("Temperature" = "temp")
                                         
                             ),
                             
-                            sliderInput("age_sm", "Age:",  min = 19, max = 50, value = c(20, 35)),
+                            sliderInput("age_tm", "Age:",  min = 19, max = 50, value = c(20, 35)),
                             
                             img(src = "j3.png", width =  "100%" )
                             
@@ -321,6 +320,7 @@ ui <- fluidPage(
                                             "Glx"= "GLX", 
                                             "SNR"= "SNR", 
                                             "water LW" ="H20LW",
+                                            "temp"= "temp",
                                             "age"= "age"),
                                         
                                         multiple= FALSE,
@@ -331,7 +331,6 @@ ui <- fluidPage(
                             selectInput("y_var", "Y Variable:", 
                                         choices = list(
                                             "GM" = "GM", 
-                                            "TISS_CORR"= "TISS_CORR",
                                             "WM" = "WM", 
                                             "CSF" = "CSF", 
                                             "CT" = "CT",
@@ -345,6 +344,7 @@ ui <- fluidPage(
                                             "Glx"= "GLX", 
                                             "SNR"= "SNR", 
                                             "water LW" ="H20LW",
+                                            "temp"= "temp",
                                             "age"= "age"),
                                         
                                         multiple= FALSE,
@@ -458,7 +458,6 @@ server <- function(input, output) {
     
     
     # Quality plot
-    
     output$Quality <- renderPlotly({
         data <- ATLAS[ATLAS$area %in% input$area &
                           ATLAS$age >= input$age[1] & ATLAS$age <= input$age[2], ]
@@ -485,11 +484,7 @@ server <- function(input, output) {
         ggplotly(p)
         
     })
-    
-    
-    
     # Summary data 
-    
     output$tabledata <- renderDataTable({
         req(input$area)
         if (input$sex == "All") {
@@ -530,6 +525,100 @@ server <- function(input, output) {
             write.csv(data, file)
         }
     )
+    
+    # Temperature 
+    output$Plot_TeM <- renderPlotly({
+      data <- ATLAS[ATLAS$area %in% input$area_tm &
+                      ATLAS$age >= input$age_tm[1] & ATLAS$age <= input$age_tm[2], ]
+      data <- data[!is.na(data$sex),]
+      
+      if (input$sex_fm != "All") {
+        data <- data[data$sex == input$sex_tm,]
+      }
+      
+      data$area <- factor(data$area, levels = input$area_tm)
+      data$area <- factor(data$area, levels = input$area_tm)
+      
+      # Subset data based on selected areas
+      selected_data <- data[data$area %in% input$area_tm,]
+      
+      if (length(unique(selected_data$sex)) > 1) {
+        p <-   ggplot(selected_data, aes(x = area, y = data[[input$outcome_tm]], fill = "All areas")) +
+          geom_violin(alpha = 0.5, trim = FALSE, color = NA) +
+          geom_jitter(width = 0.3, alpha = 0.3) +
+          geom_line(aes(group = unique_ID), color = "black", alpha = 0.3) +
+          labs(
+            y = ifelse(input$outcome_sm %in% c("XX", "XX"),
+                       ifelse(input$outcome_sm == "XX",
+                              ifelse(input$outcome_tm == "temp", "Temperature (C)", input$outcome_tm))),
+            fill = ""
+          ) +
+          scale_fill_manual(values = c("All areas" = "darkslategray4")) +
+          theme_light() +
+          theme(legend.position = "none")
+      } else {
+        p <-   ggplot(selected_data, aes(x = area, y = data[[input$outcome_tm]], fill = "All areas")) +
+          geom_violin(alpha = 0.5, trim = FALSE, color = NA) +
+          geom_jitter(width = 0.3, alpha = 0.3) +
+          geom_line(aes(group = unique_ID), color = "black", alpha = 0.3) +
+          labs(
+            y = ifelse(input$outcome_sm %in% c("XX", "XX"),
+                       ifelse(input$outcome_tm == "XX",
+                              ifelse(input$outcome_tm == "temp", "Temperature (C)", input$outcome_tm))),
+            fill = ""
+          ) +
+          scale_fill_manual(values = c("All areas" = "darkslategray4")) +
+          theme_light() +
+          theme(legend.position = "none")
+        ggplotly(p)
+        
+      }
+    })
+    
+    # Summary Data
+    output$tabledata_TeM <- renderDataTable({
+      req(input$area_tm)
+      if (input$sex_tm == "All") {
+        data <- ATLAS[ATLAS$area %in% input$area_tm & 
+                        ATLAS$age >= input$age_tm[1] & ATLAS$age <= input$age_tm[2], ]
+        data <- subset(data, !is.na(sex))
+      } else {
+        data <- ATLAS[ATLAS$area %in% input$area_tm & ATLAS$sex %in% input$sex_tm &
+                        ATLAS$age >= input$age_tm[1] & ATLAS$age <= input$age_tm[2], ]
+      }
+      data <- select(data,unique_ID, area, sex, age, input$outcome_tm)
+      # Format the values in the 'input$outcome' column with four decimal places
+      data[[input$outcome_tm]] <- format(data[[input$outcome_tm]], digits = 4, nsmall = 4)
+      
+      datatable(data, options = list(
+        columnDefs = list(list(
+          targets = c(0), # column indices or names to hide
+          visible = FALSE
+        )),
+        dom = 'lBfrtip',
+        buttons = c('copy', 'csv', 'excel', 'pdf', 'print')
+      ))
+    })
+    output$download_table_TeM <- downloadHandler(
+      filename = function() {
+        paste("table_data", Sys.Date(), ".csv", sep = "")
+      },
+      content = function(file) {
+        if (input$sex_tm == "All") {
+          data <- ATLAS[ATLAS$area %in% input$area_tm & 
+                          ATLAS$age >= input$age_tm[1] & ATLAS$age <= input$age_tm[2], ]
+          data <- subset(data, !is.na(sex))
+        } else {
+          data <- ATLAS[ATLAS$area %in% input$area_tm & ATLAS$sex %in% input$sex_tm &
+                          ATLAS$age >= input$age_tm[1] & ATLAS$age <= input$age_tm[2], ]
+        }
+        data <- select(data,unique_ID, area, sex, age, input$outcome_tm)
+        write.csv(data, file)
+      }
+    )
+    
+    
+
     # Functional Measures
     output$Plot_FM <- renderPlotly({
         data <- ATLAS[ATLAS$area %in% input$area_fm &
@@ -580,7 +669,6 @@ server <- function(input, output) {
     })
     
     # Summary Data
-    
     output$tabledata_FM <- renderDataTable({
         req(input$area_fm)
         if (input$sex_fm == "All") {
@@ -753,7 +841,7 @@ server <- function(input, output) {
         
         # Calculate the correlation matrix
         # List of variables you want to include in the correlation analysis
-        included_vars <- c('GM', 'WM', 'CSF', 'CT','CBF','GLU','GLN','GLX', 'NAA', 'MI','CRE', 'CHO','age')  #
+        included_vars <- c('GM', 'WM', 'CSF', 'CT','CBF','GLU','GLN','GLX', 'NAA', 'MI','CRE', 'CHO','temp','age')  #
         
         # Subsetting the dataset to include only the selected variables
         subset_data <- data[, included_vars]
@@ -791,7 +879,7 @@ server <- function(input, output) {
     # Define a reactive value for correlation_matrix
     correlation_matrix <- reactive({
         data <- ATLAS[ATLAS$area %in% input$area_RT,]
-        included_vars <- c('GM', 'WM', 'CSF', 'CT','CBF','GLU','GLN','GLX', 'NAA', 'MI','CRE', 'CHO','age')
+        included_vars <- c('GM', 'WM', 'CSF', 'CT','CBF','GLU','GLN','GLX', 'NAA', 'MI','CRE', 'CHO', 'temp','age')
         subset_data <- data[, included_vars]
         return(cor(subset_data, use = 'pairwise.complete.obs'))
     })
