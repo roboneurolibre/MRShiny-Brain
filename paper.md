@@ -100,7 +100,7 @@ MRI data were collected using a 3T Philips Ingenia Elition X with a 32-channel S
 **Structural Measures:** Image Segmentation was performed in FSL (v 6.05) using default options, ROI segmentation was performed using in-house MATLAB scripts. ROI Cortical Thickness was performed in native space for each subject using Freesurfer (v 7.2.0) [Code Availability ](https://github.com/arcj-hub/Freesurfer-CT-native-space).  
 
 **Arterial Spin-Labeled MRI Preprocessing and Cerebral Blood Flow Computation:**
-Arterial spin-labeled MRI images were preprocessed using ASLPrep 0.6.0rc[@debimpe2022aslprep;@salo2023aslprep], which is based on fMRIPrep[@esteban2019fmriprep;@esteban2020analysis] and Nipype 1.8.6s.  
+Arterial spin-labeled MRI images were preprocessed using ASLPrep 0.6.0rc[@adebimpe2022aslprep;@salo2023aslprep], which is based on fMRIPrep[@esteban2019fmriprep;@esteban2020analysis] and Nipype 1.8.6s.  
 
 _Anatomical data preprocessing_
  A total of 50 T1-weighted (T1w) images were found within the input BIDS dataset. The T1-weighted (T1w) image was corrected for intensity non-uniformity (INU) with `N4BiasFieldCorrection`[@avants2014ants], distributed with ANTs 2.3.3[@avants2008symmetric;@hang2001segmentation], and used as T1w-reference throughout the workflow. The T1w-reference was then skull-stripped with a Nipype implementation of the `antsBrainExtraction.sh` workflow (from ANTs), using OASIS30ANTs as target template. Brain tissue segmentation of cerebrospinal fluid (CSF), white-matter (WM) and gray-matter (GM) was performed on the brain extracted T1w using `fast` [FSL 6.0.7.1][@jenkinson2002improved].  
