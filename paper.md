@@ -14,7 +14,7 @@ authors:
   orcid: "0000-0001-6651-183X"
   affiliation: '1, 2 '
 - name: Alexander Mark Weber
-  orcid: null
+  orcid: 0000-0001-7295-0775
   affiliation: ' 3, 4 '
 - name: Paulina Scheuren
   orcid: null
@@ -32,7 +32,7 @@ authors:
   orcid: null
   affiliation: ' 5 '
 - name: Erin L. MacMillan
-  orcid: null
+  orcid: 0000-0002-8515-5858
   equal-contrib: yes
   affiliation: ' 6,8,7 '
 - name: John L.K Kramer
