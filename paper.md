@@ -7,8 +7,8 @@ tags:
 - Neuroscience
 date: "8 March 2023"
 output:
-  word_document: default
   pdf_document: default
+  word_document: default
 authors:
 - name: Jessica Archibald
   orcid: "0000-0001-6651-183X"
@@ -149,22 +149,17 @@ The quality metrics of the spectra can be seen in the application directly, whil
 ----------------------
 In summary, this work provides a database containing structural, functional, and biochemical data from the brains of 51 healthy individuals. This resource serves as a valuable reference for researchers exploring neurodegenerative and neuropsychiatric conditions. The interplay of structural, functional, and biochemical measures within a healthy population may provide an understanding of normal variability, laying the groundwork for more nuanced investigations into neurological conditions.
 
+
 5     |     ACKNOWLEDGEMENTS
 ----------------------
 The UBC MRI technologists are sincerely thanked for their valuable assistance and support throughout the study. The following funding sources are also acknowledged: J. Archibald's research scholarship from the National Council of Science and Technology (CONACYT), GSD-NSERC, and the Friedman Foundation. E.L. MacMillan's salary support from Philips Canada; and J. Kramer's funding from an NSERC Discovery Grant.
 
-
 # Figures
-
 ![Study design. MR scans included an anatomical 3DT1, a pseudo-continuous arterial spin labelling (pCASL) sequence, and an MR Spectroscopy (MRS) sequence sLASER. MRS data were collected at 4 different voxel locations (periungual anterior cingulate cortex [pACC], anterior mid-cingulate cortex [aMCC], posterior mid-cingulate cortex [pMCC], and the posterior cingulate cortex [PCC]) The order of the MRS acquisition from each voxel was randomized for each participant. Figure modified with text, markings, and colour after adaptation of “Nervous System & Medical Equipment” from Servier Medical Art by Servier, licensed under a Creative Commons Attribution 3.0 Unported License.\label{fig:figure1}](content/images/fig1.png){ width=50% }
 
 ![MRS Average Spectra at each brain location. Averaged participant spectra are illustrated in gray, and the group mean in black. MRS data were collected at 4 different voxel locations (periungual anterior cingulate cortex [pACC], anterior mid-cingulate cortex [aMCC], posterior mid-cingulate cortex [pMCC], and the posterior cingulate cortex. [PCC]).\label{fig:figure2}](content/images/fig2.png){ width=50% }
 
-
-
-## References
-
-
+# References
 
 
 
