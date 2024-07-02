@@ -16,8 +16,13 @@ authors:
 - name: Alexander Mark Weber
   orcid: 0000-0001-7295-0775
   affiliation: ' 3, 4 '
+<<<<<<< HEAD
 - name: Paulina S. Scheuren
   orcid: null
+=======
+- name: Paulina Scheuren
+  orcid:  0000-0001-7568-0133
+>>>>>>> 8ba10e079046f094a1558b3d807cd6fdb438c9ae
   affiliation: ' 1, 9 '
 - name: Oscar Ortiz
   orcid: null
