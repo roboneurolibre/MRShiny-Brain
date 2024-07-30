@@ -7,8 +7,8 @@ tags:
 - Neuroscience
 date: "8 March 2023"
 output:
-  pdf_document: default
   word_document: default
+  pdf_document: default
 authors:
 - name: Jessica Archibald
   orcid: "0000-0001-6651-183X"
@@ -16,22 +16,19 @@ authors:
 - name: Alexander Mark Weber
   orcid: 0000-0001-7295-0775
   affiliation: ' 3, 4 '
-<<<<<<< HEAD
 - name: Paulina S. Scheuren
   orcid: null
-=======
 - name: Paulina Scheuren
   orcid:  0000-0001-7568-0133
->>>>>>> 8ba10e079046f094a1558b3d807cd6fdb438c9ae
   affiliation: ' 1, 9 '
 - name: Oscar Ortiz
-  orcid: null
+  orcid: 0000-0001-5872-2434
   affiliation: ' 1 '
 - name: Cassandra Choles
   orcid: null
   affiliation: ' 1, 9 '
-- name: Jaime Lee
-  orcid: null
+- name: Jaimie J. Lee
+  orcid: 0009-0009-6246-2773
   affiliation: ' 1, 9 '
 - name: Niklaus Zölch
   orcid: null
