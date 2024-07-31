@@ -17,8 +17,6 @@ authors:
   orcid: 0000-0001-7295-0775
   affiliation: ' 3, 4 '
 - name: Paulina S. Scheuren
-  orcid: null
-- name: Paulina Scheuren
   orcid:  0000-0001-7568-0133
   affiliation: ' 1, 9 '
 - name: Oscar Ortiz
