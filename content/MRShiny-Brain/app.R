@@ -8,7 +8,7 @@ library(dplyr)
 library(ggplot2)
 library(DT)
 library(reshape2)
-
+library(shinyWidgets)
 
 # Read in data
 ATLAS <- read.csv("data.csv", stringsAsFactors = TRUE)
@@ -52,7 +52,7 @@ ui <- fluidPage(
                         HTML("<li> <b> Dr. Alexander Mark Weber -</b> Pediatrics, University of British Columbia, Vancouver, Canada. </li>"),
                         HTML("<li> <b> Dr. Paulina S. Scheuren -</b> Anesthesiology, Pharmacology, and Therapeutics, University of British Columbia, Vancouver, Canada. </li>"),
                         HTML("<li> <b> Oscar Ortiz -</b> MSc, Research Technician, ICORD, Vancouver, Canada. </li>"),
-                        HTML("<li> <b> Jaime Lee -</b> BSc, Anesthesiology, Pharmacology, and Therapeutics, University of British Columbia, Vancouver, Canada </li>"),
+                        HTML("<li> <b> Jaimie J Lee -</b> BSc, Anesthesiology, Pharmacology, and Therapeutics, University of British Columbia, Vancouver, Canada </li>"),
                         HTML("<li> <b> Cassandra Choles -</b> MSc, Anesthesiology, Pharmacology, and Therapeutics, University of British Columbia, Vancouver, Canada. </li>"),
                         HTML("<li> <b> Dr. Niklaus Zölch -</b> Psychiatry and Forensic Medicine, Universität Zürich, Zürich, Switzerland. </li>"),
                         HTML("<li> <b> Dr. Erin L. MacMillan* -</b>  Radiology, University of British Columbia, Vancouver, Canada. ImageTech Lab, Simon Fraser University, Surrey, Canada. Philips Healthcare Canada, Markham, Canada.</li>"),
