@@ -1,9 +1,6 @@
 format: jb-book
-root: 00-simple_markdown
+root: summary
 parts:
-  - caption: Ipynb
+  - caption: MRShiny Brain
     chapters:
-    - file: 01-simple_notebook
-  - caption: MyST
-    chapters:
-    - file: 02-simple-myst
+    - file: notebook
