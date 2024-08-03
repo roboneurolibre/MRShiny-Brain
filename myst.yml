@@ -1,0 +1,100 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: 'Integrating Structural, Functional, and Biochemical Brain Imaging Data with
+  MRShiny Brain'
+  subtitle: An Interactive Web Application
+  authors:
+    - name: Jessica Archibald
+      orcid: "0000-0001-6651-183X"
+      affiliations:
+        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
+        - Department of Experimental Medicine, University of British Columbia, Vancouver, Canada.
+    - name: Alexander Mark Weber
+      orcid: 0000-0001-7295-0775
+      affiliations:
+        - Department of Pediatrics, University of British Columbia, Vancouver, Canada.
+        - BC Children Hospital Research Institute, Vancouver, Canada.
+    - name: Paulina S. Scheuren
+      orcid:  0000-0001-7568-0133
+      affiliations:
+        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
+        - Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Columbia, Vancouver, Canada. 
+    - name: Oscar Ortiz
+      orcid: 0000-0001-5872-2434
+      affiliations:
+        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
+    - name: Cassandra Choles
+      affiliations:
+        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
+        - Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Colum
+    - name: Jaimie J. Lee
+      orcid: 0009-0009-6246-2773
+      affiliations:
+        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
+        - Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Colum
+    - name: Niklaus Zölch
+      affiliations:
+        - Forensic Medicine, Universität Zürich, Zürich, Switzerland.
+    - name: Erin L. MacMillan
+      orcid: 0000-0002-8515-5858
+      affiliations:
+        - Department of Radiology, University of British Columbia, Vancouver, Canada.
+        - Image Tech Lab, Simon Fraser University, Surrey, Canada.
+        - Philips Healthcare Canada, Mississauga, Canada.
+    - name: John L.K Kramer
+      affiliations:
+        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
+        - Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Columbia, Vancouver, Canada. 
+  keywords:
+    - Preprint
+    - Interactive article
+    - Neuroscience
+    - Dashboard 
+    - R Shiny
+  github: https://github.com/arcj-hub/MRShiny-Brain
+  banner: featured.png
+  venue: Neurolibre
+  subject: Living Preprint
+  numbering:
+    headings: true
+  doi: 10.55458/neurolibre.00029
+  open_access: true
+  license: CC-BY-4.0
+  abbreviations:
+    MRS: Magnetic Resonance Spectroscopy
+    MRI: Magnetic Resonance Imaging
+    pCASL: Pseudo-continuous Arterial Spin Labelling
+    pMCC: Posterior Mid-cingulate Cortex
+    aMCC: Anterior Mid-cingulate Cortex
+    pACC: Periungual Anterior Cingulate Cortex
+    PCC: Posteriot Cingulate Cortex
+    sLASER: Semi-adiabatic Localization by Adiabatic SElective Refocusing
+    CSF: Cerebrospinal Fluid
+    GM: Gray Matter
+    WM: White Matter
+    CBF: Cerebral Blood Flow
+    SDC: Susceptibility distortion correction
+    DVARS: Temporal derivative of variance over runs 
+    FD: Framewise Displacement
+    ROI: Region of Interest
+    NAA: N-acetylasparteate
+    TB: Brain Temperature
+    FWHM: Full width at half maximum
+    CT: Cortical Thickness
+    LW: Linewidth of the water spectrum
+    CRLB: Cramer-Rao Lower Bounds
+    tCr: Total Creatine
+    tCho: Total Choline
+    mI: myoinositol
+    Glu: Glutamate
+    Gln: Glutamine
+    Glx: glutamate+glutamine
+  bibliography:
+    - paper.bib
+  exclude:
+    - README.md
+    - content/notebook.ipynb
+    - paper.md
+site:
+  template: article-theme

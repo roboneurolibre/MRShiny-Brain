@@ -138,7 +138,7 @@ MRShiny Brain interactive dashboard at [https://shinybrain.db.neurolibre.org](ht
 
 #### Thermometry
 
-1. Temperature: Temperature in Celcius {math}`\textdegree C` in each brain region of interest.
+1. Temperature: Temperature in Celcius {math}`\degree C` in each brain region of interest.
 
 
 ## RESULTS
