@@ -1,6 +1,0 @@
-format: jb-book
-root: summary
-parts:
-  - caption: MRShiny Brain
-    chapters:
-    - file: notebook
