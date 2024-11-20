@@ -1,9 +1,8 @@
 ---
-title: Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain
-subtitle: An Interactive Web Application
-date: 2024-08-02
-exports:
-  - format: pdf
+numbering:
+  heading_2: false
+  figure:
+    template: Fig. %s
 ---
 
 +++ { "part": "abstract" }
