@@ -90,8 +90,8 @@ project:
     Glu: Glutamate
     Gln: Glutamine
     Glx: glutamate+glutamine
-  toc:
-    - file: mystpaper.md
+  resources:
+    - content/notebook.ipynb
   bibliography:
     - paper.bib
   exclude:
