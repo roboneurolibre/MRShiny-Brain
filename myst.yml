@@ -96,7 +96,6 @@ project:
     - paper.bib
   exclude:
     - README.md
-    - content/notebook.ipynb
     - content/mystpaper.md
     - paper.md
 site:
