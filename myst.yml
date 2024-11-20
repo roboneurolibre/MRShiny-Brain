@@ -92,5 +92,8 @@ project:
     Glx: glutamate+glutamine
   bibliography:
     - paper.bib
+  resources:
+    - content/figure_1.ipynb
+    - content/notebook.ipynb
 site:
   template: article-theme
