@@ -1,2 +1,4 @@
 format: jb-book
 root: mystpaper.md
+chapters:
+  - file: content/notebook.ipynb
