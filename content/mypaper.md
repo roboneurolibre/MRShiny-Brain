@@ -13,12 +13,6 @@ The utilization of structural, functional, and biochemical data from the human b
 
 ## INTRODUCTION
 
-:::{figure} #fig1cell
-:label: fig3
-
-An example of a figure generated from a Jupyter Notebook that lives in the `content` folder of this repository. Check `content/figure_1.ipynb` to see how this figure was generated and where the label `#fig1cell` is defined.
-:::
-
 The pursuit to understand the biological foundations of neurodegenerative and neuropsychiatric conditions has led to an extensive exploration of brain imaging and neurophysiological tools. Integrating various magnetic resonance imaging (MRI) modalities has emerged as an essential approach to obtain a comprehensive understanding of these conditions. By combining morphological, functional, and biochemical data, researchers gain valuable insights into the intricate mechanisms underlying neurological diseases. These insights extend to identifying potential biomarkers and therapeutic targets, thereby paving the way for improved treatment strategies for neurological disorders.
 
 A notable challenge in understanding the brain’s behaviour in disease lies in the incomplete comprehension of its state within a healthy population at rest. In the field of brain imaging, the importance of considering variability between individuals and across different brain regions is high. Therefore, creating a comprehensive database that includes information from multiple brain regions, and multiple modalities in a healthy population is invaluable for guiding future research and clinical use. Such a database can be utilized as a reference, allowing researchers to measure deviations, potentially enabling early disease detection and monitoring progression across different populations. Furthermore, it enables a focused analysis of specific subsets of groups, for example, examining outcomes-based factors like sex or age that allow for matched comparisons.

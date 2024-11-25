@@ -1,5 +1,0 @@
-format: jb-book
-root: content/mypaper.md
-chapters:
-  - file: content/notebook.ipynb
-  - file: content/figure_1.ipynb
