@@ -28,11 +28,11 @@ authors:
     affiliation: "5"
   - name: Erin L. MacMillan
     orcid: 0000-0002-8515-5858
-    equal-contrib: yes
+    equal-contrib: true
     affiliation: "6,8,7"
   - name: John L.K Kramer
     orcid: null
-    equal-contrib: yes
+    equal-contrib: true
     affiliation: "1, 9"
 affiliations:
 - name: International Collaboration on Repair Discoveries (ICORD), University of BritishColumbia, Vancouver, Canada.
