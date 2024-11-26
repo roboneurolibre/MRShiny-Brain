@@ -133,10 +133,11 @@ MRS analysis was performed following the recent expert guideline recommendations
 
 #### MRS thermometry:
 
-MRS thermometry exploits the temperature dependence of the location of the water peak on the frequency axis (-0.01 ppm/°C), whereas that at the reference metabolite [e.g., N-acetylasparteate (NAA)] is not temperature dependent [@cady1995estimation;@thrippleton2014reliability]. After data pre-processing (i.e., frequency alignment, eddy current correction), local brain temperature (TB) was estimated by calculating the chemical shift difference between water and NAA measured in parts per million (ppm) using the followingequation:
+MRS thermometry exploits the temperature dependence of the location of the water peak on the frequency axis (-0.01 ppm/°C), whereas that at the reference metabolite [e.g., N-acetylasparteate (NAA)] is not temperature dependent [@cady1995estimation;@thrippleton2014reliability]. After data pre-processing (i.e., frequency alignment, eddy current correction), local brain temperature (TB) was estimated by calculating the chemical shift difference between water and NAA measured in parts per million (ppm) using the following equation:
 
-
-$$TB(\degree{C}) = 100 \times [\Delta(NAA_{ppm} - water_{ppm}) + 2.665] + 37$$
+\begin{equation}
+TB(\degree{C}) = 100 \times [\Delta(NAA_{ppm} - water_{ppm}) + 2.665] + 37
+\end{equation}
 
 
 NAAppm and waterppm values were defined as the mid-point of the full width half max (FWHM) for both the NAA and water peaks, respectively. TB was estimated for each voxel separately (i.e., pACC, aMCC, pMCC, PCC - [code here](https://github.com/psscheuren)).
