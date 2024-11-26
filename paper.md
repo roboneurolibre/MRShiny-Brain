@@ -1,62 +1,58 @@
 ---
-title: "Integrating Structural, Functional, and Biochemical Brain Imaging Data with
-  MRShiny Brain - An Interactive Web Application"
+title: "Integrating Structural, Functional, and Biochemical Brain Imaging Data with MRShiny Brain - An Interactive Web Application"
 tags:
-- Preprint
-- Reproducible article
-- Neuroscience
+  - Preprint
+  - Reproducible article
+  - Neuroscience
 authors:
-- name: Jessica Archibald
-  orcid: "0000-0001-6651-183X"
-  affiliation: "1, 2"
-- name: Alexander Mark Weber
-  orcid: 0000-0001-7295-0775
-  affiliation: "3, 4"
-- name: Paulina S. Scheuren
-  orcid:  0000-0001-7568-0133
-  affiliation: "1, 9"
-- name: Oscar Ortiz
-  orcid: 0000-0001-5872-2434
-  affiliation: "1"
-- name: Cassandra Choles
-  orcid: null
-  affiliation: "1, 9"
-- name: Jaimie J. Lee
-  orcid: 0009-0009-6246-2773
-  affiliation: "1, 9"
-- name: Niklaus Zölch
-  orcid: null
-  affiliation: "5"
-- name: Erin L. MacMillan
-  orcid: 0000-0002-8515-5858
-  equal-contrib: yes
-  affiliation: "6,8,7"
-- name: John L.K Kramer
-  orcid: null
-  equal-contrib: yes
-  affiliation: "1, 9"
+  - name: Jessica Archibald
+    orcid: 0000-0001-6651-183X
+    affiliation: "1, 2"
+  - name: Alexander Mark Weber
+    orcid: 0000-0001-7295-0775
+    affiliation: "3, 4"
+  - name: Paulina S. Scheuren
+    orcid:  0000-0001-7568-0133
+    affiliation: "1, 9"
+  - name: Oscar Ortiz
+    orcid: 0000-0001-5872-2434
+    affiliation: "1"
+  - name: Cassandra Choles
+    orcid: null
+    affiliation: "1, 9"
+  - name: Jaimie J. Lee
+    orcid: 0009-0009-6246-2773
+    affiliation: "1, 9"
+  - name: Niklaus Zölch
+    orcid: null
+    affiliation: "5"
+  - name: Erin L. MacMillan
+    orcid: 0000-0002-8515-5858
+    equal-contrib: yes
+    affiliation: "6,8,7"
+  - name: John L.K Kramer
+    orcid: null
+    equal-contrib: yes
+    affiliation: "1, 9"
 affiliations:
-- name: International Collaboration on Repair Discoveries (ICORD), University of British
-    Columbia, Vancouver, Canada.
-  index: 1
-- name: Department of Experimental Medicine, University of British Columbia, Vancouver,
-    Canada.
-  index: 2
-- name: Department of Pediatrics, University of British Columbia, Vancouver, Canada.
-  index: 3
-- name: BC Children Hospital Research Institute, Vancouver, Canada.
-  index: 4
-- name: Forensic Medicine, Universität Zürich, Zürich, Switzerland.
-  index: 5
-- name: Department of Radiology, University of British Columbia, Vancouver, Canada.
-  index: 6
-- name: Image Tech Lab, Simon Fraser University, Surrey, Canada.
-  index: 7
-- name: Philips Healthcare Canada, Mississauga, Canada.
-  index: 8
-- name: Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine,
-    University of British Columbia, Vancouver, Canada.
-  index: 9
+  - name: International Collaboration on Repair Discoveries (ICORD), University of BritishColumbia, Vancouver, Canada.
+    index: 1
+  - name: Department of Experimental Medicine, University of British Columbia, Vancouver, Canada.
+    index: 2
+  - name: Department of Pediatrics, University of British Columbia, Vancouver, Canada.
+    index: 3
+  - name: BC Children Hospital Research Institute, Vancouver, Canada.
+    index: 4
+  - name: Forensic Medicine, Universität Zürich, Zürich, Switzerland.
+    index: 5
+  - name: Department of Radiology, University of British Columbia, Vancouver, Canada.
+    index: 6
+  - name: Image Tech Lab, Simon Fraser University, Surrey, Canada.
+    index: 7
+  - name: Philips Healthcare Canada, Mississauga, Canada.
+    index: 8
+  - name: Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Columbia Vancouver, Canada.
+    index: 9
 bibliography: paper.bib
 date: "25 November 2024"
 ---
