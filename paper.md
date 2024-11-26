@@ -5,41 +5,36 @@ tags:
 - Preprint
 - Reproducible article
 - Neuroscience
-date: "8 March 2023"
-output:
-  word_document: default
-  pdf_document: default
 authors:
 - name: Jessica Archibald
   orcid: "0000-0001-6651-183X"
-  affiliation: '1, 2 '
+  affiliation: "1, 2"
 - name: Alexander Mark Weber
   orcid: 0000-0001-7295-0775
-  affiliation: ' 3, 4 '
+  affiliation: "3, 4"
 - name: Paulina S. Scheuren
   orcid:  0000-0001-7568-0133
-  affiliation: ' 1, 9 '
+  affiliation: "1, 9"
 - name: Oscar Ortiz
   orcid: 0000-0001-5872-2434
-  affiliation: ' 1 '
+  affiliation: "1"
 - name: Cassandra Choles
   orcid: null
-  affiliation: ' 1, 9 '
+  affiliation: "1, 9"
 - name: Jaimie J. Lee
   orcid: 0009-0009-6246-2773
-  affiliation: ' 1, 9 '
+  affiliation: "1, 9"
 - name: Niklaus Zölch
   orcid: null
-  affiliation: ' 5 '
+  affiliation: "5"
 - name: Erin L. MacMillan
   orcid: 0000-0002-8515-5858
   equal-contrib: yes
-  affiliation: ' 6,8,7 '
+  affiliation: "6,8,7"
 - name: John L.K Kramer
   orcid: null
   equal-contrib: yes
-  affiliation: ' 1, 9 '
-bibliography: paper.bib
+  affiliation: "1, 9"
 affiliations:
 - name: International Collaboration on Repair Discoveries (ICORD), University of British
     Columbia, Vancouver, Canada.
@@ -62,13 +57,15 @@ affiliations:
 - name: Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine,
     University of British Columbia, Vancouver, Canada.
   index: 9
+bibliography: paper.bib
+date: "25 November 2024"
 ---
 
-## Abstract
+# Abstract
 
 The utilization of structural, functional, and biochemical data from the human brain has grown in addressing inquiries related to neurodegenerative and neuropsychiatric conditions. However, the normal variability within these measures has not been systematically reported. In this work, a database comprising these outcome measures in a healthy population (`n=51`) was established to potentially serve as a comparative reference. Healthy individuals underwent standardized procedures to ensure consistent collection of magnetic resonance imaging (`MRI`) and spectroscopy data. The MR data was acquired using a 3T scanner with various sequences, including MPRAGE 3D T1w, pseudo-continuous arterial spin labelling (`pCASL`), and single voxel proton magnetic resonance spectroscopy (`1H-MRS`). Established and custom software tools were employed to analyze outcome measures such as tissue segmentation, cortical thickness, cerebral blood flow, metabolite levels, and temperature estimated using MRS. This study provides a comprehensive overview of the data analysis process, aiming to facilitate future utilization of the collected data through an [interactive dashboard](#intdashboard) developed in [R](https://en.wikipedia.org/wiki/R_(programming_language)#:~:text=R%20is%20a%20programming%20language,%2C%20bioinformatics%2C%20and%20data%20analysis.) using the [Shiny](https://en.wikipedia.org/wiki/Shiny_(software)) framework.
 
-## INTRODUCTION
+# INTRODUCTION
 
 The pursuit to understand the biological foundations of neurodegenerative and neuropsychiatric conditions has led to an extensive exploration of brain imaging and neurophysiological tools. Integrating various magnetic resonance imaging (MRI) modalities has emerged as an essential approach to obtain a comprehensive understanding of these conditions. By combining morphological, functional, and biochemical data, researchers gain valuable insights into the intricate mechanisms underlying neurological diseases. These insights extend to identifying potential biomarkers and therapeutic targets, thereby paving the way for improved treatment strategies for neurological disorders.
 
@@ -81,7 +78,7 @@ The MRShiny Brain application has been developed as a normative live database, d
 As we examine brain function, it becomes evident that understanding the brain in a healthy state is pivotal to understanding it in pathological states. The challenge of understanding the brain’s intricacies in various states, particularly during rest, underscores the importance of our study. By building a comprehensive foundation of knowledge through the integration of diverse brain outcome measures, into a user-friendly database we aim to drive advancements in our understanding of brain function.
 
 
-## METHODS
+# METHODS
 
 ### Demographics
 
@@ -172,7 +169,7 @@ To facilitate the reuse and exploration of the data, we have developed an intera
 
 1. Temperature: Temperature in Celcius {math}`\degree C` in each brain region of interest.
 
-## RESULTS
+# RESULTS
 
 The quality metrics of the spectra can be seen in the application directly, while \autoref{fig2} illustrates the pre-processed and baseline corrected spectra.
 
@@ -180,14 +177,16 @@ The quality metrics of the spectra can be seen in the application directly, whil
 
 MRS and CBF data (1 M) were unable to be included since the individual transients, and pCASL data were not properly saved, but CT data was viable. For three participants we excluded metabolites from one location (i.e., pACC (n=1), aMCC (n=1), and PCC (n=1)), due to linewidth of the water being >10Hz. The MRS data quality from the remaining participants are illustrated in app. The mean ± std.dev of the quality evaluation index (QEI)25 for ASL CBF maps for the 50 subjects is  0.794 ± 0.032.
 
-## CONCLUSION
+# CONCLUSION
 
 In summary, this work provides a database containing structural, functional, and biochemical data from the brains of 51 healthy participants. This resource serves as a valuable reference for researchers exploring neurodegenerative and neuropsychiatric conditions. The interplay of structural, functional, and biochemical measures within a healthy population may provide an understanding of normal variability, laying the groundwork for more nuanced investigations into neurological conditions.
 
-## Acknowledgements
+# Acknowledgements
 
 The UBC MRI technologists are sincerely thanked for their valuable assistance and support throughout the study. The following funding sources are also acknowledged: J. Archibald's research scholarship from the National Council of Science and Technology (CONACYT), GSD-NSERC, and the Friedman Foundation. P.S. Scheuren is supported by the International Foundation for Research in Paraplegia (P 198 F), the Swiss National Science Foundation (P500PB_214416), and Michael Smith Health Research BC (RT-2023-3173). E.L. MacMillan’s salary support from Philips Canada; and J. Kramer’s funding from an NSERC Discovery Grant.
 
-## Data Availability
+# Data Availability
 
 An interactive NeuroLibre dashboard has been deployed at https://shinybrain.db.neurolibre.org. The data is downloadable within the application. The analysis scripts are available on github, with the exception of the MRS preprocessing MRS MATLAB code, this can be accessed by reaching out to ELM directly `erin.macmillan@ubc.ca`.
+
+# References
