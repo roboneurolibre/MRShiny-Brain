@@ -97,8 +97,3 @@ project:
     - paper.md
 site:
   template: article-theme
-  options:
-    logo: content/neurolibre-logo.png
-  actions:
-    - title: Neurolibre
-      url: https://neurolibre.org
