@@ -136,7 +136,7 @@ MRS analysis was performed following the recent expert guideline recommendations
 MRS thermometry exploits the temperature dependence of the location of the water peak on the frequency axis (-0.01 ppm/°C), whereas that at the reference metabolite [e.g., N-acetylasparteate (NAA)] is not temperature dependent [@cady1995estimation;@thrippleton2014reliability]. After data pre-processing (i.e., frequency alignment, eddy current correction), local brain temperature (TB) was estimated by calculating the chemical shift difference between water and NAA measured in parts per million (ppm) using the following equation:
 
 \begin{equation}
-TB(\degree{C}) = 100 \times [\Delta(NAA_{ppm} - water_{ppm}) + 2.665] + 37
+TB(^{\circ}\text{C}) = 100 \times [\Delta(NAA_{ppm} - water_{ppm}) + 2.665] + 37
 \end{equation}
 
 
