@@ -61,7 +61,7 @@ Four cingulate cortex single voxel 1H-MRS scans (semi-adiabatic Localization by 
 
 #### Structural Measures:
 
-Image Segmentation was performed in FSL (`v6.05`) using default options, ROI segmentation was performed using in-house MATLAB scripts. ROI Cortical Thickness was performed in native space for each subject using Freesurfer (v 7.2.0) [Code Availability ](https://github.com/arcj-hub/Freesurfer-CT-native-space).
+Image Segmentation was performed in FSL (`v6.05`) using default options, ROI segmentation was performed using in-house MATLAB scripts. ROI Cortical Thickness was performed in native space for each subject using Freesurfer (v 7.2.0 - [code here](https://github.com/arcj-hub/Freesurfer-CT-native-space)).
 
 #### Arterial Spin-Labeled MRI Preprocessing and Cerebral Blood Flow Computation:
 
@@ -83,15 +83,15 @@ ASLPrep calculated cerebral blood flow (CBF) from the single-delayPCASL using a 
 
 #### ROI CBF estimates
 
-ROI perfusion levels were extracted in native space using each ROI’s mask. Firstly the images were co-registered using `flirt` [@greve2009accurate], the resampled mask was then binarized, and ROI CBF was calculated using fslstats `cbf_extraction.sh` ([code Availability](https://github.com/arcj-hub/ASLprep-CBF-Analysis)).
+ROI perfusion levels were extracted in native space using each ROI’s mask. Firstly the images were co-registered using `flirt` [@greve2009accurate], the resampled mask was then binarized, and ROI CBF was calculated using fslstats `cbf_extraction.sh` ([code here](https://github.com/arcj-hub/ASLprep-CBF-Analysis)).
 
 #### Quality Evaluation Index (QEI)
 
-The QEI was computed for each CBF map [@dolui2017structural]. QEI is based on the similarity between the CBF and the structural images, the spatial variability of the CBF image, and the percentage of grey matter voxels containing negative CBF values ‘Quality_aslprep.sh` ([code Availability](https://github.com/arcj-hub/ASLprep-CBF-Analysis)). For more details of the pipeline, see [ASLPrep-Documentation](https://aslprep.readthedocs.io/en/latest/).
+The QEI was computed for each CBF map [@dolui2017structural]. QEI is based on the similarity between the CBF and the structural images, the spatial variability of the CBF image, and the percentage of grey matter voxels containing negative CBF values ‘Quality_aslprep.sh` ([code here](https://github.com/arcj-hub/ASLprep-CBF-Analysis)). For more details of the pipeline, see [ASLPrep-Documentation](https://aslprep.readthedocs.io/en/latest/).
 
 #### MR Spectroscopy:
 
-MRS analysis was performed following the recent expert guideline recommendations [@near2021preprocessing]. MRS data was pre-processed (e.g., `frequency alignment`, and `eddy-current correction`) and quantified using in-house MATLAB scripts. Spectral fitting was performed in LCModel (`6.3`). The basis set was simulated using the FID-A `run-simLaserShapted_fast.m` [@simpson2017advanced] function- [Code Availability](https://github.com/arcj-hub/BasisSetSimulation). The simulation included the following metabolites: PE, Asc, Scyllo, Glu, Gln, Cre, NAA, NAAG, PCr, GSH, Gly, Glc, GPC, Ala, Asp, GABA, Ins, Lac, and Tau. The LCModel fit was performed in the range of 0.5 to 4.0 ppm.
+MRS analysis was performed following the recent expert guideline recommendations [@near2021preprocessing]. MRS data was pre-processed (e.g., `frequency alignment`, and `eddy-current correction`) and quantified using in-house MATLAB scripts. Spectral fitting was performed in LCModel (`6.3`). The basis set was simulated using the FID-A `run-simLaserShapted_fast.m` [@simpson2017advanced] function ([code here](https://github.com/arcj-hub/BasisSetSimulation)). The simulation included the following metabolites: PE, Asc, Scyllo, Glu, Gln, Cre, NAA, NAAG, PCr, GSH, Gly, Glc, GPC, Ala, Asp, GABA, Ins, Lac, and Tau. The LCModel fit was performed in the range of 0.5 to 4.0 ppm.
 
 #### MRS thermometry:
 
@@ -102,11 +102,11 @@ MRS thermometry exploits the temperature dependence of the location of the water
 TB(\degree{C}) = 100 \times [\Delta(NAA_{ppm} - water_{ppm}) + 2.665] + 37
 ```
 
-NAAppm and waterppm values were defined as the mid-point of the full width half max (FWHM) for both the NAA and water peaks, respectively. TB was estimated for each voxel separately (i.e., pACC, aMCC, pMCC, PCC).[Code Availability ](https://github.com/psscheuren).
+NAAppm and waterppm values were defined as the mid-point of the full width half max (FWHM) for both the NAA and water peaks, respectively. TB was estimated for each voxel separately (i.e., pACC, aMCC, pMCC, PCC - [code here](https://github.com/psscheuren)).
 
 ### DASHBOARD
 
-To facilitate the reuse and exploration of the data, we have developed an interactive web application using R Shiny. This application provides an intuitive and user-friendly interface for accessing and analyzing the dataset. The application allows users to interact with the data in a dynamic manner, enabling exploration, visualization, and integration with other datasets. The dataset is composed of different types of data structural, perfusion, and biochemical. These data can all be downloaded directly via the [MRShiny Brain web-application](https://shinybrain.db.neurolibre.org) deployed on NeuroLibre [@karakuzu2022nl].
+To facilitate the reuse and exploration of the data, we have developed an interactive web application using R Shiny. This application provides an intuitive and user-friendly interface for accessing and analyzing the dataset. The application allows users to interact with the data in a dynamic manner, enabling exploration, visualization, and integration with other datasets. The dataset is composed of different types of data structural, perfusion, and biochemical. These data can all be downloaded directly via the [MRShiny Brain web-application](https://shinybrain.db.neurolibre.org) deployed on NeuroLibre [@karakuzu2022nl;@harding2023canadian].
 
 :::: {admonition} Interact with the dashboard here!
 :class: tip
