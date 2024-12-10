@@ -7,45 +7,82 @@ project:
   authors:
     - name: Jessica Archibald
       orcid: "0000-0001-6651-183X"
-      affiliations:
-        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
-        - Department of Experimental Medicine, University of British Columbia, Vancouver, Canada.
+      affiliations: ubc; ubcmed
     - name: Alexander Mark Weber
       orcid: 0000-0001-7295-0775
-      affiliations:
-        - Department of Pediatrics, University of British Columbia, Vancouver, Canada.
-        - BC Children Hospital Research Institute, Vancouver, Canada.
+      affiliations: ubcped; bcchri
     - name: Paulina S. Scheuren
       orcid:  0000-0001-7568-0133
-      affiliations:
-        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
-        - Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Columbia, Vancouver, Canada. 
+      affiliations: ubc; ubcmed
     - name: Oscar Ortiz
       orcid: 0000-0001-5872-2434
-      affiliations:
-        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
+      affiliations: ubc
     - name: Cassandra Choles
-      affiliations:
-        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
-        - Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Colum
+      orcid: 0000-0002-8515-5858
+      affiliations: ubc; ubcmed
+    - name: Jaimie J. Lee
+      affiliations: ubcmed
     - name: Jaimie J. Lee
       orcid: 0009-0009-6246-2773
-      affiliations:
-        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
-        - Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Colum
+      affiliations: ubc; ubcmed
     - name: Niklaus Zölch
-      affiliations:
-        - Forensic Medicine, Universität Zürich, Zürich, Switzerland.
+      affiliations: uzh
     - name: Erin L. MacMillan
       orcid: 0000-0002-8515-5858
-      affiliations:
-        - Department of Radiology, University of British Columbia, Vancouver, Canada.
-        - Image Tech Lab, Simon Fraser University, Surrey, Canada.
-        - Philips Healthcare Canada, Mississauga, Canada.
+      affiliations: ubcrad; sfutech; phc
+      equal_contributor: true
     - name: John L.K Kramer
-      affiliations:
-        - International Collaboration on Repair Discoveries (ICORD), University of British Columbia, Vancouver, Canada.
-        - Department of Anesthesiology, Pharmacology and Therapeutics, Faculty of Medicine, University of British Columbia, Vancouver, Canada. 
+      affiliations: ubc; ubcmed
+      equal_contributor: true
+  affiliations:
+    - id: ubc
+      name: International Collaboration on Repair Discoveries (ICORD), University of British Columbia
+      ror: https://ror.org/03rmrcq20
+      city: Vancouver
+      region: British Columbia
+      country: Canada
+    - id: ubcmed
+      name: Faculty of Medicine, University of British Columbia
+      department: Department of Anesthesiology, Pharmacology and Therapeutics
+      ror: https://ror.org/03rmrcq20
+      city: Vancouver
+      region: British Columbia
+      country: Canada        
+    - id: ubcped
+      name: Department of Pediatrics, University of British Columbia
+      ror: https://ror.org/03rmrcq20
+      city: Vancouver
+      region: British Columbia
+      country: Canada
+    - id: bcchri
+      name: BC Children Hospital Research Institute
+      ror: https://ror.org/03rmrcq20
+      city: Vancouver
+      region: British Columbia
+      country: Canada
+    - id: uzh
+      name: Forensic Medicine, Universität Zürich
+      ror: https://ror.org/02crff812
+      city: Zürich
+      region: Zürich
+      country: Switzerland
+    - id: ubcrad
+      name: Department of Radiology, University of British Columbia
+      ror: https://ror.org/03rmrcq20
+      city: Vancouver
+      region: British Columbia
+      country: Canada
+    - id: sfutech
+      name: Image Tech Lab, Simon Fraser University
+      ror: https://ror.org/0213rcc28
+      city: Surrey
+      region: British Columbia
+      country: Canada
+    - id: phc
+      name: Philips Healthcare Canada
+      city: Mississauga
+      region: Ontario
+      country: Canada
   keywords:
     - Preprint
     - Interactive article
