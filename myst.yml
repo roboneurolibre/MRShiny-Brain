@@ -1,134 +1,146 @@
-# See docs at: https://mystmd.org/guide/frontmatter
-version: 1
 project:
-  title: 'Integrating Structural, Functional, and Biochemical Brain Imaging Data with
-  MRShiny Brain'
-  subtitle: An Interactive Web Application
-  authors:
-    - name: Jessica Archibald
-      orcid: "0000-0001-6651-183X"
-      affiliations: ubc; ubcmed
-    - name: Alexander Mark Weber
-      orcid: 0000-0001-7295-0775
-      affiliations: ubcped; bcchri
-    - name: Paulina S. Scheuren
-      orcid:  0000-0001-7568-0133
-      affiliations: ubc; ubcmed
-    - name: Oscar Ortiz
-      orcid: 0000-0001-5872-2434
-      affiliations: ubc
-    - name: Cassandra Choles
-      orcid: 0000-0002-8515-5858
-      affiliations: ubc; ubcmed
-    - name: Jaimie J. Lee
-      orcid: 0009-0009-6246-2773
-      affiliations: ubc; ubcmed
-    - name: Niklaus Zölch
-      affiliations: uzh
-    - name: Erin L. MacMillan
-      orcid: 0000-0002-8515-5858
-      affiliations: ubcrad; sfutech; phc
-      equal_contributor: true
-    - name: John L.K Kramer
-      affiliations: ubc; ubcmed
-      equal_contributor: true
-  affiliations:
-    - id: ubc
-      name: International Collaboration on Repair Discoveries (ICORD), University of British Columbia
-      ror: https://ror.org/03rmrcq20
-      city: Vancouver
-      region: British Columbia
-      country: Canada
-    - id: ubcmed
-      name: Faculty of Medicine, University of British Columbia
-      department: Department of Anesthesiology, Pharmacology and Therapeutics
-      ror: https://ror.org/03rmrcq20
-      city: Vancouver
-      region: British Columbia
-      country: Canada        
-    - id: ubcped
-      name: Department of Pediatrics, University of British Columbia
-      ror: https://ror.org/03rmrcq20
-      city: Vancouver
-      region: British Columbia
-      country: Canada
-    - id: bcchri
-      name: BC Children Hospital Research Institute
-      ror: https://ror.org/03rmrcq20
-      city: Vancouver
-      region: British Columbia
-      country: Canada
-    - id: uzh
-      name: Forensic Medicine, Universität Zürich
-      ror: https://ror.org/02crff812
-      city: Zürich
-      region: Zürich
-      country: Switzerland
-    - id: ubcrad
-      name: Department of Radiology, University of British Columbia
-      ror: https://ror.org/03rmrcq20
-      city: Vancouver
-      region: British Columbia
-      country: Canada
-    - id: sfutech
-      name: Image Tech Lab, Simon Fraser University
-      ror: https://ror.org/0213rcc28
-      city: Surrey
-      region: British Columbia
-      country: Canada
-    - id: phc
-      name: Philips Healthcare Canada
-      city: Mississauga
-      region: Ontario
-      country: Canada
-  keywords:
-    - Preprint
-    - Interactive article
-    - Neuroscience
-    - Dashboard 
-    - R Shiny
-  github: https://github.com/arcj-hub/MRShiny-Brain
-  banner: featured.png
-  venue: Neurolibre
-  subject: Living Preprint
-  numbering:
-    headings: true
-  doi: 10.55458/neurolibre.00029
-  open_access: true
-  license: CC-BY-4.0
   abbreviations:
-    MRS: Magnetic Resonance Spectroscopy
+    CBF: Cerebral Blood Flow
+    CRLB: Cramer-Rao Lower Bounds
+    CSF: Cerebrospinal Fluid
+    CT: Cortical Thickness
+    DVARS: Temporal derivative of variance over runs
+    FD: Framewise Displacement
+    FWHM: Full width at half maximum
+    GM: Gray Matter
+    Gln: Glutamine
+    Glu: Glutamate
+    Glx: glutamate+glutamine
+    LW: Linewidth of the water spectrum
     MRI: Magnetic Resonance Imaging
+    MRS: Magnetic Resonance Spectroscopy
+    NAA: N-acetylasparteate
+    PCC: Posteriot Cingulate Cortex
+    ROI: Region of Interest
+    SDC: Susceptibility distortion correction
+    TB: Brain Temperature
+    WM: White Matter
+    aMCC: Anterior Mid-cingulate Cortex
+    mI: myoinositol
+    pACC: Periungual Anterior Cingulate Cortex
     pCASL: Pseudo-continuous Arterial Spin Labelling
     pMCC: Posterior Mid-cingulate Cortex
-    aMCC: Anterior Mid-cingulate Cortex
-    pACC: Periungual Anterior Cingulate Cortex
-    PCC: Posteriot Cingulate Cortex
     sLASER: Semi-adiabatic Localization by Adiabatic SElective Refocusing
-    CSF: Cerebrospinal Fluid
-    GM: Gray Matter
-    WM: White Matter
-    CBF: Cerebral Blood Flow
-    SDC: Susceptibility distortion correction
-    DVARS: Temporal derivative of variance over runs 
-    FD: Framewise Displacement
-    ROI: Region of Interest
-    NAA: N-acetylasparteate
-    TB: Brain Temperature
-    FWHM: Full width at half maximum
-    CT: Cortical Thickness
-    LW: Linewidth of the water spectrum
-    CRLB: Cramer-Rao Lower Bounds
-    tCr: Total Creatine
     tCho: Total Choline
-    mI: myoinositol
-    Glu: Glutamate
-    Gln: Glutamine
-    Glx: glutamate+glutamine
+    tCr: Total Creatine
+  affiliations:
+  - city: Vancouver
+    country: Canada
+    id: ubc
+    name: International Collaboration on Repair Discoveries (ICORD), University of
+      British Columbia
+    region: British Columbia
+    ror: https://ror.org/03rmrcq20
+  - city: Vancouver
+    country: Canada
+    department: Department of Anesthesiology, Pharmacology and Therapeutics
+    id: ubcmed
+    name: Faculty of Medicine, University of British Columbia
+    region: British Columbia
+    ror: https://ror.org/03rmrcq20
+  - city: Vancouver
+    country: Canada
+    id: ubcped
+    name: Department of Pediatrics, University of British Columbia
+    region: British Columbia
+    ror: https://ror.org/03rmrcq20
+  - city: Vancouver
+    country: Canada
+    id: bcchri
+    name: BC Children Hospital Research Institute
+    region: British Columbia
+    ror: https://ror.org/03rmrcq20
+  - city: "Z\xFCrich"
+    country: Switzerland
+    id: uzh
+    name: "Forensic Medicine, Universit\xE4t Z\xFCrich"
+    region: "Z\xFCrich"
+    ror: https://ror.org/02crff812
+  - city: Vancouver
+    country: Canada
+    id: ubcrad
+    name: Department of Radiology, University of British Columbia
+    region: British Columbia
+    ror: https://ror.org/03rmrcq20
+  - city: Surrey
+    country: Canada
+    id: sfutech
+    name: Image Tech Lab, Simon Fraser University
+    region: British Columbia
+    ror: https://ror.org/0213rcc28
+  - city: Mississauga
+    country: Canada
+    id: phc
+    name: Philips Healthcare Canada
+    region: Ontario
+  authors:
+  - affiliations: ubc; ubcmed
+    name: Jessica Archibald
+    orcid: 0000-0001-6651-183X
+  - affiliations: ubcped; bcchri
+    name: Alexander Mark Weber
+    orcid: 0000-0001-7295-0775
+  - affiliations: ubc; ubcmed
+    name: Paulina S. Scheuren
+    orcid: 0000-0001-7568-0133
+  - affiliations: ubc
+    name: Oscar Ortiz
+    orcid: 0000-0001-5872-2434
+  - affiliations: ubc; ubcmed
+    name: Cassandra Choles
+    orcid: 0000-0002-8515-5858
+  - affiliations: ubc; ubcmed
+    name: Jaimie J. Lee
+    orcid: 0009-0009-6246-2773
+  - affiliations: uzh
+    name: "Niklaus Z\xF6lch"
+  - affiliations: ubcrad; sfutech; phc
+    equal_contributor: true
+    name: Erin L. MacMillan
+    orcid: 0000-0002-8515-5858
+  - affiliations: ubc; ubcmed
+    equal_contributor: true
+    name: John L.K Kramer
+  banner: featured.png
   bibliography:
-    - paper.bib
+  - paper.bib
+  copyright: NeuroLibre
+  doi: 10.55458/neurolibre.00029
   exclude:
-    - README.md
-    - paper.md
+  - README.md
+  - paper.md
+  github: https://github.com/roboneurolibre/MRShiny-Brain
+  keywords:
+  - Preprint
+  - Interactive article
+  - Neuroscience
+  - Dashboard
+  - R Shiny
+  license:
+    code: GPL-3.0
+    content: CC-BY-4.0
+  numbering:
+    headings: true
+  open_access: true
+  subject: Living Preprint
+  subtitle: An Interactive Web Application
+  thebe:
+    binder:
+      ref: main
+      repo: https://github.com/roboneurolibre/MRShiny-Brain
+      url: https://binder-mcgill.conp.cloud
+  title: Integrating Structural, Functional, and Biochemical Brain Imaging Data with
+    MRShiny Brain
+  venue: NeuroLibre
 site:
+  options:
+    favicon: favicon.ico
+    logo: logo.png
+    twitter: neurolibre
   template: article-theme
+version: 1
